@@ -3,16 +3,15 @@ let thisSite = window.location.host;
 
 // Check the current URL
 if (thisSite === "discordapp.com" || thisSite === "discord.com") {
-  doDiscord();
+  addWebsite("discord");
 } else if (thisSite === "www.youtube.com") {
-  doYouTube();
+  addWebsite("youtube");
 } else if (thisSite === "github.com") {
-  doDev();
+  addWebsite("github");
 }
 
-// discord.com
-function doDiscord() {
-  let a = chrome.extension.getURL("css/discord.css"),
+function addWebsite(name) {
+  let a = chrome.extension.getURL(`css/${name}.css`),
     link = document.createElement("link");
 
   link.type = "text/css";
@@ -23,28 +22,3 @@ function doDiscord() {
   document.head.appendChild(link);
 }
 
-// www.youtube.com
-function doYouTube() {
-  let a = chrome.extension.getURL("css/youtube.css"),
-    link = document.createElement("link");
-
-  link.type = "text/css";
-  link.rel = "stylesheet";
-  link.id = "Nord Web Themes";
-  link.href = a;
-
-  document.head.appendChild(link);
-}
-
-// github.com
-function doDev() {
-  let a = chrome.extension.getURL("css/github.css"),
-    link = document.createElement("link");
-
-  link.type = "text/css";
-  link.rel = "stylesheet";
-  link.id = "Nord Web Themes";
-  link.href = a;
-
-  document.head.appendChild(link);
-}
