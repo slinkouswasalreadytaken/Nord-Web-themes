@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to Nord Web Themes 👋</h1>
-<h2><a href="https://addons.mozilla.org/en-US/firefox/addon/nord-web-theme/" target="_blank">Our extension on the fireox marketplace</a></h2>
+<h2><a href="https://addons.mozilla.org/en-US/firefox/addon/nord-web-theme/" target="_blank">Our extension on the firefox marketplace</a></h2>
 <h2><a href="https://microsoftedge.microsoft.com/addons/detail/nord-web-themes/pcaeblapppplaeiahlilfekiclnlphch
 " target="_blank">Our extension on the microsoft marketplace(works for chrome aswell)</a></h2>
 <h3><a href="https://discord.gg/VaTDrWrF6a" target="_blank">Join our discord server</a></h3>
